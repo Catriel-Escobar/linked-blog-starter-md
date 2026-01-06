@@ -146,9 +146,11 @@ func (h *GRPCAuthHandler) Login(ctx context.Context, req *proto.LoginRequest) (*
 - ✅ Debugging simple (curl)
 
 ### Conceptos relacionados
-- [[Protocol Buffers]]
-- [[HTTP/2]]
-- [[Streaming APIs]]
+[[Service Mesh]]
+
+[[HTTP-2]]
+
+[[Protocol Buffers]]
 
 ---
 
@@ -287,9 +289,11 @@ func JWT(secret []byte) func(http.Handler) http.Handler {
 - Error recovery
 
 ### Conceptos relacionados
-- [[Decorator Pattern]]
-- [[Chain of Responsibility]]
-- [[Cross-Cutting Concerns]]
+[[Cross-Cutting Concerns]]
+
+[[Decorator Pattern 1]]
+
+[[Chain of Responsibility]]
 
 ---
 
@@ -380,9 +384,9 @@ type metricsWriter struct {
 ```
 
 ### Conceptos relacionados
-- [[Decorator Pattern]]
+- [[Decorator Pattern 1]]
 - [[Composition Over Inheritance]]
-- [[Open/Closed Principle]]
+-  [[Open-Closed Principle]]
 
 ---
 
@@ -537,9 +541,11 @@ func handleGRPCError(w http.ResponseWriter, err error) {
 - ❌ Nunca poner errores en campos del mensaje (Success: false)
 
 ### Conceptos relacionados
-- [[Error Handling Patterns]]
-- [[Status Codes]]
-- [[Observability]]
+[[Status Codes]]
+
+[[Error Handling Patterns]]
+
+[[Observability]]
 
 ---
 
@@ -636,9 +642,11 @@ userID := ctx.Value(userIDKey).(string)
 ```
 
 ### Conceptos relacionados
-- [[Distributed Tracing]]
-- [[Graceful Shutdown]]
-- [[Request Cancellation]]
+[[Request Cancellation]]
+
+[[Distributed Tracing]]
+
+[[Graceful Shutdown]]
 
 ---
 
@@ -849,9 +857,11 @@ func fanIn(channels ...<-chan int) <-chan int {
 - ❌ Evitar goroutine leaks (siempre tener forma de terminar)
 
 ### Conceptos relacionados
-- [[CSP (Communicating Sequential Processes)]]
-- [[Race Conditions]]
-- [[Deadlocks]]
+[[Race Conditions]]
+
+[[CSP (Communicating Sequential Processes)]]
+
+[[Deadlocks]]
 
 ---
 
@@ -1015,11 +1025,12 @@ logs:
 ```
 
 ### Conceptos relacionados
-- [[Kubernetes]]
-- [[Service Discovery]]
-- [[Container Orchestration]]
+[[Service Discovery]]
 
----
+[[Container Orchestration]]
+
+[[Kubernetes]]
+
 
 ## 🎯 Patrones de Diseño Aplicados
 

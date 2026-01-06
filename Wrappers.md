@@ -85,6 +85,6 @@ type metricsWriter struct {
 ```
 
 ### Conceptos relacionados
-- [[Decorator Pattern]]
+- [[Decorator Pattern 1]]
 - [[Composition Over Inheritance]]
 - [[Open/Closed Principle]]
